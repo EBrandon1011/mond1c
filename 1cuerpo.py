@@ -53,34 +53,15 @@ class Mond():
         arch.close()
                         
 def main():
-#    hale=Mond()
-#    hale.nombre ='Hale'
-#    hale.x=-136759097051.827
-#    hale.vy=-44001.0945139
-#    
-#    haleP=Mond() #PLUS r+dr
-#    haleP.nombre ='HaleP'
-#    haleP.x=-137250656596.667
-#    haleP.vy=-43922.4701946
-#    
-#    haleM=Mond() #MINUS r-dr
-#    haleM.nombre ='HaleM'
-#    haleM.x=-136267537506.986
-#    haleM.vy=-44079.7188331
-
+    #Se ingresan las condiciones iniciales de cada cuerpo que orbita
+    
     tierra = Mond()
     tierra.nombre = 'Tierra'
     tierra.masa = 5.9742 * 10**24
     tierra.x = -147.09 *10**9
     tierra.vy = 30.29 * 1000 
-        
-#    hale.iteraciones()
-#    haleP.iteraciones()
-#    haleM.iteraciones()
+
     tierra.iteraciones()
     
 if __name__ == '__main__':
-    main()
-    
-    
-    
+    main() 
